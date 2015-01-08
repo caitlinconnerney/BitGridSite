@@ -1,0 +1,468 @@
+/* NavBar Section -------------------------------*/
+body {
+  font-family: arial, sans-serif, helvetica;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.navbar-nav {
+  float: right;
+  z-index: 100;
+  font-size: 16px;
+  font-family: arial, sans-serif, helvetica;
+  margin-top: 30px;
+}
+
+.navbar-default {
+  background: transparent;
+  border-width: 0px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  z-index: 1000;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #CCCCCC;
+}
+.navbar-default .navbar-brand:hover {
+  color: #CCCCCC;
+}
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse,
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-style: none;
+  padding-top: 10px;
+}
+
+img.logo{
+  width: 80%;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+/* Parallax/Jumbotron Section -------------------------------*/
+
+.bg {
+  background: url('http://i58.tinypic.com/295czsw.png') top center no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 650px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  border-bottom-style: solid;
+  border-bottom-color: #F15A24;
+  border-bottom-width: 3px;
+  z-index: -1;
+}
+@media (max-width: 979px) {
+  .bg {
+    height: 550px;
+  }
+}
+@media (max-width: 450px) {
+  .bg {
+    height: 480px;
+  }
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 650px;
+  color: white;
+  background:transparent;
+  padding-top: 200px;
+  letter-spacing: 0px;
+}
+.jumbotron p{
+  width: 50%;
+  font-size: 15px;
+  font-family: arial, sans-serif, helvetica;
+}
+@media (max-width: 979px) {
+  .jumbotron {
+    padding-top: 150px;
+    height: 550px;
+  }
+  .jumbotron p{
+  width: 80%
+}
+}
+@media (max-width: 450px) {
+  .jumbotron {
+    padding-top: 100px;
+    height: 480px;
+  }
+  .jumbotron p{
+  width: 80%
+}
+}
+
+/* 'Our Platform' Section -------------------------------*/
+
+.platform {
+  float: right;
+  width: 95%;
+}
+@media (max-width: 979px) {
+  .platform {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .platform {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+img.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+@media (max-width: 979px) {
+  img.centered {
+    padding-bottom: 30px;
+  }
+}
+
+img.platformpic{
+  width: 100%;
+  float: right;
+}
+@media (max-width: 979px) {
+  img.platformpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.platformText {
+  padding-top: 70px;
+  display: block;
+}
+@media (max-width: 979px) {
+  img.platformText {
+    padding-bottom: 30px; 
+  }
+}
+.platformText h2 {
+  color: #F15A24;
+  letter-spacing: -1px;
+}
+.platformText p {
+  color: #4D4D4D;
+  line-height: 22px;
+}
+
+
+.platformblock {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: #f3c6b7;
+  border-bottom-width: 2px;
+  z-index: 1;
+  display: block;
+}
+@media (max-width: 979px) {
+  .platformblock {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    z-index: 1;
+  }
+}
+
+/* Icons Section ---------------------------------------------*/
+
+.iconblock{
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: #F4F4F4;
+  border-bottom-style: solid;
+  border-bottom-color: #F15A24;
+  border-bottom-width: 2px;
+}
+.iconblock h3 {
+  color: #F15A24;
+  letter-spacing: -1px;
+}
+.iconblock p {
+  color: #4D4D4D;
+  line-height: 22px;
+  font-size: 13px;
+
+}
+
+.icontext{
+  width: 75%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.textright {
+  padding-top: 20px;
+}
+
+
+.boxright{
+  padding-top: 30px;
+}
+@media (max-width: 979px) {
+  .boxright{
+    padding-bottom: 20px;
+  }
+}
+
+.iconbox{
+
+}
+@media (max-width: 979px) {
+  .iconbox{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+  }
+}
+
+/* middle icon box inner container*/
+.iconboxmiddle{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* middle icon box outer box*/
+.boxcenter{
+  border-left-style: solid;
+  border-left-color: #f1a68c;
+  border-left-width: 1px;
+  border-right-style: solid;
+  border-right-color: #f1a68c;
+  border-right-width: 1px;
+}
+@media (max-width: 979px) {
+  .boxcenter{
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: solid;
+    border-top-color: #f1a68c;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f1a68c;
+    border-bottom-width: 1px;
+    padding-top: 30px;
+  }
+}
+
+
+/* Carousel Section -------------------------------*/
+
+.sectiontitle{
+  text-align: center;
+  margin-bottom: 70px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+@media (max-width: 979px) {
+  .sectiontitle {
+    width: 70%;
+  }
+}
+@media (max-width: 450px) {
+  .sectiontitle {
+    width: 80%;
+  }
+}
+
+.sectiontitle h2 {
+  color: #F15A24;
+  letter-spacing: -1px;
+}
+.sectiontitle p {
+  color: #4D4D4D;
+  line-height: 22px;
+}
+
+.carouselblock{
+  padding-top: 90px;
+  padding-bottom: 100px;
+  border-bottom-style: solid;
+  border-bottom-color: #f3c6b7;
+  border-bottom-width: 2px;
+}
+
+.carousel2block{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F4F4F4;
+}
+
+#myCarousel .thumbnail {
+  margin-bottom: 0;
+}
+
+.well {
+  width: 85%;
+  margin: auto;
+  background-color: #F9F9F9;
+  border-style: none;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #CCCCCC;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: #CCCCCC;
+  border-top-style: none;
+}
+
+.secondCarouselWell {
+  background-color: #FFFFFF;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image:none !important;
+}
+.carousel-control {
+  color:#fff;
+  top:40%;
+  color:#000000;
+  bottom:auto;
+  padding-top:4px;
+  width:30px;
+  height:30px;
+  text-shadow:none;
+  opacity:1;
+}
+.carousel-control:hover {
+  color: #F48C6C;
+}
+.carousel-control.left, .carousel-control.right {
+  background-image:none !important;
+}
+.carousel-control.right {
+  left:auto;
+  right:-60px;
+}
+.carousel-control.left {
+  right:auto;
+  left:-60px;
+}
+.fa {
+  color: #F15A24;
+}
+.fa:hover {
+  color: #F48C6C;
+}
+.carousel-indicators {
+  bottom:-15px;
+}
+.carousel-indicators li {
+  border-radius:5px;
+  width:10px;
+  height:10px;
+  background:#CCCCCC;
+  border-style: none;
+}
+.carousel-indicators .active {
+  width:10px;
+  height:10px;
+  background:#F15A24;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.thumbnail{
+  background-color: transparent;
+  border-style: none;
+}
+.secondCarouselWell .caption {
+  height: 190px;
+}
+.caption h3{
+  font-size: 14px;
+  color: #1A1A1A;
+  font-weight: bolder;
+}
+.caption a:hover{
+  text-decoration: none;
+  font-style: italic;
+}
+.caption h5 {
+  color: #4D4D4D;
+  font-size: 12px;
+}
+.caption p{
+  font-size: 11px;
+  color: #4D4D4D;
+  line-height: 16px;
+}
+
+/* Newsletter block ---------------------------------------*/
+
+.newsletterblock{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #ED805F;
+  color: white;
+}
+
+.input-group .form-control:first-child, 
+.input-group-addon:first-child, 
+.input-group-btn:first-child>.btn, 
+.input-group-btn:first-child>.btn-group>.btn, 
+.input-group-btn:first-child>.dropdown-toggle, 
+.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle), 
+.input-group-btn:last-child>.btn-group:not(:last-child)>.btn{
+  border-style: none;
+}
+
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group{
+  background-color: #A53D1E;
+  border-color: #91321C;
+  color: white;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.socialmediablock{
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*----- footer ----------------------*/
+
+.footer{
+  text-align: center;
+  color: #B3B3B3;
+  background-color: #333333;
+  font-size: 12px;
+}
+
+.footer p {
+  margin-bottom: 0px;
+}
