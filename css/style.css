@@ -54,7 +54,8 @@ img.logo{
 /* Parallax/Jumbotron Section -------------------------------*/
 
 .bg {
-  background: url('http://i58.tinypic.com/295czsw.png') top center no-repeat;
+  background: url('http://i57.tinypic.com/2uts2g3.png') center center no-repeat;
+  background-size: 100%;
   background-attachment: fixed;
   width: 100%;
   height: 650px; /*same height as jumbotron */
@@ -446,6 +447,9 @@ img.platformpic{
    outline: none !important;
 }
 
+#UserDisplayForm label { display: block; }
+#UserDisplayForm div { display: inline-block; }
+
 .socialmediablock{
   width: 50%;
   margin-right: auto;
@@ -453,6 +457,45 @@ img.platformpic{
   margin-top: 50px;
   text-align: center;
 }
+
+.twitterbird {
+ margin-bottom: 10px;
+ width: 160px;
+ height:160px;
+ display:block;
+ background:transparent url('http://i62.tinypic.com/10xygkp.png') center top no-repeat;
+}
+
+.twitterbird:hover {
+   background-image: url('http://i58.tinypic.com/4sdt3s.png');
+}
+
+.linkedin {
+ margin-bottom: 10px;
+ width: 160px;
+ height:160px;
+ display:block;
+ background:transparent url('http://i62.tinypic.com/qy5ojr.png') center top no-repeat;
+}
+
+.linkedin:hover {
+   background-image: url('http://i61.tinypic.com/5djl1d.png');
+}
+
+
+.email {
+ margin-bottom: 10px;
+ width: 160px;
+ height:160px;
+ display:block;
+ background:transparent url('http://i57.tinypic.com/qxp6xu.png') center top no-repeat;
+}
+
+.email:hover {
+   background-image: url('http://i59.tinypic.com/2ijoqba.jpg');
+}
+
+
 
 /*----- footer ----------------------*/
 

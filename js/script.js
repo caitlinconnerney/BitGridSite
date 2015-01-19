@@ -27,3 +27,21 @@ $(function() {
     }
   });
 });
+
+$('#newsletterForm').on('submit', function(e) {
+    e.preventDefault(); //Prevents default submit
+    var form = $(this); 
+    var post_url = form.attr('action'); 
+    var post_data = form.serialize(); //Serialized the form data for process.php
+    $('#loader', form).html('<img src="http://media.giphy.com/media/IgQ8E05Dpg2ze/giphy.gif" /> Please Wait...');
+    $.ajax({
+        type: 'POST',
+        url: 'mail.php', // Your form script
+        data: post_data,
+        success: function(msg) {
+            $(form).fadeOut(500, function(){
+                form.html(msg).fadeIn();
+            });
+        }
+    });
+});

@@ -300,27 +300,35 @@
 				<div class="newsletterbox">
 				<h1> Stay Updated with Bitgrid. </h1>
 				<p> Evolve with us, and upgrade the way utilities impact the world. </p>
-				<div class="input-group">
-				  <input type="text" class="form-control" placeholder="example@email.com" aria-describedby="basic-addon2">
-				  <span class="input-group-btn">
-        			<button class="btn btn-default" type="button">Subscribe</button>
-      			</span>
+
+				<form id = "newsletterForm" action="mail.php" method="post">
+					<div class="input-group">
+						 <input type="text" class="form-control" placeholder="example@email.com" name="email" aria-describedby="basic-addon2" style="width: 100%">
+						 <span class="input-group-btn"> 
+						  	<button class="btn btn-default" type="submit" style="float: right" onclick="myFunction()">Subscribe</button> 
+						 </span>
+
+					</div>
+					
+				</form>
+
 				</div>
+				
 				</div>
 			</div>
 			</div>
 			<div class="row">
 			<div class="socialmediablock">
 			<div class="col-md-4">
-				<a href="https://twitter.com/bitgrid"><img class="centered" src="http://i62.tinypic.com/10xygkp.png"></a>
+				<a href="https://twitter.com/bitgrid" class ="twitterbird" title = "twitter link"></a>
 			
 			</div>
 			<div class="col-md-4">
-				<a href="https://www.linkedin.com/company/bitgrid-software-solutions"><img class="centered" src="http://i62.tinypic.com/qy5ojr.png"></a>
+				<a href="https://www.linkedin.com/company/bitgrid-software-solutions" class="linkedin" title="linkedin link"></a>
 				
 			</div>
 			<div class="col-md-4">
-				<img class="centered" src="http://i57.tinypic.com/qxp6xu.png">
+				<a href="mailto:justin@bitgrid.co?Subject=Hello" target="_top" class="email" title="email link"></a>
 
 			</div>
 			</div>
@@ -340,8 +348,6 @@
 	<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src = "js/bootstrap.js"></script>
     <script src = "js/script.js"></script>
-    <script type="text/javascript">
-</script>
 
   </body>
 
